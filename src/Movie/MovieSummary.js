@@ -85,14 +85,14 @@ const MovieSummary = () => {
           >
             {movieInfo.map((data) => {
               return (
-                <>
-                  <div className="row-auto" key={data.show.id}>
+                <div key={data.show.id}>
+                  <div className="row-auto">
                     <label className="visually-hidden" htmlFor="moviename">
                       {data.show.name}
                     </label>
                     <input
                       type="text"
-                      name="name"
+                      name="moviename"
                       autoComplete="off"
                       className="form-control"
                       id="moviename"
@@ -110,7 +110,7 @@ const MovieSummary = () => {
                         name="language"
                         autoComplete="off"
                         className="form-control"
-                        id="email"
+                        id="language"
                         placeholder="Language"
                         value={data.show.language}
                       />
@@ -122,7 +122,7 @@ const MovieSummary = () => {
                     </label>
                     <input
                       type="text"
-                      name="salary"
+                      name="type"
                       autoComplete="off"
                       className="form-control"
                       id="type"
@@ -136,7 +136,7 @@ const MovieSummary = () => {
                     </label>
                     <input
                       type="text"
-                      name="salary"
+                      name="ticketprice"
                       autoComplete="off"
                       className="form-control"
                       id="ticketprice"
@@ -144,7 +144,7 @@ const MovieSummary = () => {
                       value="₹250"
                     />
                   </div>
-                </>
+                </div>
               );
             })}
             <div className="row-auto">
@@ -206,7 +206,7 @@ const MovieSummary = () => {
                 name="email"
                 autoComplete="off"
                 className="form-control"
-                id="salary"
+                id="email"
                 placeholder="Enter Your Email"
                 required
               />
