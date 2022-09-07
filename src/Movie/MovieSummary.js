@@ -61,7 +61,7 @@ const MovieSummary = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{data.show.name}</h5>
-                  <div className="card-text">
+                  <div className="card-text" style={{textAlign:"justify"}}>
                     <Markup content={data.show.summary} />
                   </div>
                   <button
