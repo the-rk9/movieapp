@@ -61,9 +61,9 @@ const MovieSummary = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{data.show.name}</h5>
-                  <p className="card-text">
+                  <div className="card-text">
                     <Markup content={data.show.summary} />
-                  </p>
+                  </div>
                   <button
                     type="button"
                     className="btn btn-outline-primary"
@@ -78,7 +78,7 @@ const MovieSummary = () => {
         </div>
       </div>
       {isToggle && (
-        <div style={{ marginLeft: "45px", marginTop: "4%" }}>
+        <div style={{ marginLeft: "45px", marginTop: "4%"}}>
           <form
             className="row gy-2 gx-3 align-items-center my-1 mx-5"
             onSubmit={formSubmit}
